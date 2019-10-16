@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyectos</title>
+</head>
+
+<body>
+    <h1>Proyectos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Fecha de Creación</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div>
+        Nombre:<br>
+        <input type="text" id="name" value="Mickey">
+        <br>
+        Descripción:<br>
+        <input type="text" id="description" value="Mouse">
+        <br><br>
+        <button id="submit">Crear Nuevo Proyecto</button>
+    </div>
+
+
+    <script id="entry-template" type="text/x-handlebars-template">
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{creationDate}}</td>
+        </tr>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
